@@ -1,1 +1,14 @@
-<p>signin works!</p>
+<!-- <p>signin works!</p> -->
+<div class="login-card bg-pink-500 dark:bg-slate-400">
+
+    <div class="card-title">
+        <h1>Login</h1>
+        <span>You don't have an account? <a routerLink="/signup">Sign up</a></span>
+    </div>
+    <form class="form-group" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <input name="email" type="email" formControlName="email" placeholder="Email" class="bg-linear-to-r/increasing from-indigo-500 to-teal-400">
+        <input type="password" formControlName="password" placeholder="Password" class="bg-linear-to-r/increasing from-indigo-500 to-teal-400">
+        <button class="bg-slate-500 dark:bg-slate-800">Submit</button>
+    </form>
+
+</div>
