@@ -1,9 +1,6 @@
 
-
-
-
 <div class="min-h-screen min-w-full bg-slate-200 dark:bg-slate-800"  >
-  <div class="flex justify-between items-center bg-teal-600 text-white p-5 font-semibold text-lg shadow-lg dark:bg-slate-800">
+  <div class="flex justify-between items-center bg-teal-600 text-white p-5 font-semibold text-lg shadow-lg dark:bg-slate-600">
     
       Dark Mode with Angular and TailwindCSS
       <!-- <button (click)="darkMode.set(!darkMode())"> -->
@@ -18,7 +15,7 @@
       </button>
     
   </div>
-  {{darkMode() }}
+  <router-outlet></router-outlet>
 </div>
 
-<router-outlet />
+
