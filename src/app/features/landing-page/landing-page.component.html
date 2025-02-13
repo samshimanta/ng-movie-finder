@@ -1,0 +1,71 @@
+<div class="min-w-full bg-slate-200 dark:bg-slate-800">
+   
+    <div class="grid grid-cols-2 " >        
+        <div class="bg-rose-800 dark:bg-lime-900">
+            <p  class="text-cyan-600 text-4xl p-3">Lorem Ipsum Doller Set Amit </p>
+            <p class="text-slate-900 text-2xl p-2">
+                Feeling the weight of hand hygiene compliance? Semmel takes the burden off your shoulders, from managing
+                observers to automated reporting.
+                Reduce stress, protect patients, and achieve compliance the smarter way. Schedule a free demo today!
+            </p>
+            <br>
+            @if(authService.isLoggedIn()){
+
+            <p-button (click)="logout()">
+                Logout
+            </p-button>
+            }
+           
+        </div>
+        <div class="bg-pink-900 ">
+            <p-card  >
+                <ng-template #header>
+                    <img src="https://picsum.photos/id/13/900/600/" alt="tree">
+                </ng-template>
+                <ng-template #title> Book A Semmel Hand Hygiene Demo No </ng-template>
+
+                
+                <ng-template #footer>
+                    <div class="flex gap-4 mt-1">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                            numquam deserunt
+                            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+                            quas!
+                        </p>
+                    </div>
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>
+
+<div class="h-32 min-w-full bg-amber-700 dark:bg-slate-800">
+    <p class="text-slate-700 dark:text-slate-300 text-3xl text-center py-4">Lorem ipsum dolor sit amet , voluptatem ad! Beatae dolores ipsa qui molestiae dignissimos vel molestias maxime a.</p>
+</div>
+
+<div class="grid grid-cols-2 bg-violet-800 dark:bg-slate-600  py-4">
+    <div  class="" >
+        <h1 class="px-8 py-8 text-2xl text-slate-300">Angular 18 Highcharts Example - ItSolutionStuff.com</h1>
+        <div class="px-8">
+            <highcharts-chart 
+       
+        [Highcharts]="Highcharts"
+        [options]="chartOptions"
+        
+       
+        ></highcharts-chart>
+        </div>
+            
+        
+    </div>
+    <div class="flex bg-rose-800 dark:bg-slate-800 my-24 p-4">
+        <p class="text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores laudantium, voluptatum quod assumenda rerum cum harum fuga
+                sed explicabo ullam magnam molestias tempore aliquam dolor ex.
+                Atque sed nemo consectetur.</p>
+    </div>
+</div>
+
+    
+
+

@@ -1,16 +1,16 @@
 <!-- <p>signup works!</p> -->
-<div class="signup-card">
+<div class="signup-card bg-pink-500 dark:bg-slate-400">
     <div class="card-title">
         <h1>Create Account</h1>
         <span>Already have an account? <a routerLink="/login">Sign In</a></span>
     </div>
     <form class="form-group" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
-        <input type="text" name="name" placeholder="Name" formControlName="name">
-        <input type="email" name="email" placeholder="Email" formControlName="email">
-        <input type="password" name="password" placeholder="Password" formControlName="password">
-        <input type="submit" value="Signup">
+        <input type="text" name="name" placeholder="Name" formControlName="name" class="bg-linear-to-r/increasing from-indigo-500 to-teal-400">
+        <input type="email" name="email" placeholder="Email" formControlName="email" class="bg-linear-to-r/increasing from-indigo-500 to-teal-400">
+        <input type="password" name="password" placeholder="Password" formControlName="password" class="bg-linear-to-r/increasing from-indigo-500 to-teal-400">
+        <input type="submit" value="Signup" class="bg-slate-500 dark:bg-slate-800">
     </form>
     <div class="card-terms">
-        <input type="checkbox"> <span>I have read and agree to the <a href="">Terms of Service</a></span>
+        <input type="checkbox"> <span class="text-rose-800">I have read and agree to the <a href="">Terms of Service</a></span>
     </div>
 </div>
